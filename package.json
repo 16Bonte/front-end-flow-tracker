@@ -1,0 +1,60 @@
+{
+  "name": "front-end-flow-tracker",
+  "displayName": "Front End Flow Tracker - JS/TS",
+  "description": "Trace JavaScript/TypeScript code execution by automatically injecting network requests that report function calls to a local server, allowing you to track the flow of your code when running in the browser from the log file.",
+  "version": "1.0.0-alpha.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "front-end-flow-tracker.addLogs",
+        "title": "Front End Flow Tracker: Add logs"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__traverse": "^7.20.6",
+    "@types/express": "^5.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/sinon": "^17.0.4",
+    "@types/vscode": "^1.97.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.19.0",
+    "npm-run-all": "^4.1.5",
+    "sinon": "^20.0.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.26.8",
+    "@babel/parser": "^7.26.8",
+    "@babel/traverse": "^7.26.8",
+    "express": "^4.21.2"
+  }
+}
