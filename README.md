@@ -37,7 +37,7 @@ Front End Flow Tracker - JS/TS (FEFT) is a Visual Studio Code extension that hel
 
 1. Open your JS/TS project in VS Code
 2. Run the command by pressing `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
-3. Type "WTH: Add logs" and select it
+3. Type "Front End Flow Tracker: Add logs" and select it
 4. Review and confirm the changes in the dialog
 5. The extension will:
    - Scan your project files (only .js, .jsx, .ts, .tsx)
