@@ -11,7 +11,16 @@ export const IGNORED_DIRECTORIES = [
   ".cache",
   ".turbo",
   "out",
-  ".tsbuildinfo"
+  ".tsbuildinfo",
+  ".svelte-kit",
+  ".angular",
+  ".nuxt",
+  ".gatsby",
+  ".remix",
+  ".vite",
+  ".astro",
+  ".parcel-cache",
+  ".webpack"
 ];
 export const SYSTEM_PATHS = [
   "/home",

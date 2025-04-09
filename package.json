@@ -2,7 +2,13 @@
   "name": "front-end-flow-tracker",
   "displayName": "Front End Flow Tracker - JS/TS",
   "description": "Trace JavaScript/TypeScript code execution by automatically injecting network requests that report function calls to a local server, allowing you to track the flow of your code when running in the browser from the log file.",
-  "version": "1.0.0-alpha.1",
+  "publisher": "16Bonte",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/16Bonte/front-end-flow-tracker"
+  },
+  "icon":"icon.png",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.97.0"
   },
