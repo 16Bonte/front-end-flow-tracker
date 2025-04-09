@@ -134,7 +134,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Release Notes
 
-### 1.0.0-alpha.1 (2025-04-03)
+### 1.0.0 (2025-04-03)
 
 - Initial release
 - Automatic log statement insertion for JavaScript/TypeScript functions
@@ -145,3 +145,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Central log file creation in frontEndFlowTracker/logs
 
 ---
+### 1.0.0 (2025-04-09)
+
+- Improve the list of directories that should not be updated
+- Add logo
+- Fill missing infos in package.json
