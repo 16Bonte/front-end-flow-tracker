@@ -43,7 +43,7 @@ export const SYSTEM_PATHS = [
   'C:\\System32',
 ];
 export const SUPPORTED_FILE_EXTENSIONS = [".js", ".jsx", ".ts", ".tsx"];
-export const MAX_FILES_LIMIT = 500;
+export const MAX_FILES_LIMIT = 1000;
 export const MAX_BATCH_SIZE = 10;
 
 export const PORT = 3049;
